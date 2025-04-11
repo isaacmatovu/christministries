@@ -6,8 +6,23 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white pt-12 pb-6">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-8">
-          <div>
+        {/* Logo section - now at the top for mobile */}
+        <div className="flex items-center mb-8 md:mb-4 md:hidden">
+          <div className="relative h-10 w-10 mr-2">
+            <Image
+              src="/church-logo.svg"
+              alt="Grace Community Church"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <span className="text-sm">Where Faith Meets Life</span>
+        </div>
+
+        {/* Grid section */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+          {/* Logo section - hidden on mobile, shown on desktop */}
+          <div className="hidden md:block">
             <div className="flex items-center mb-4">
               <div className="relative h-10 w-10 mr-2">
                 <Image
