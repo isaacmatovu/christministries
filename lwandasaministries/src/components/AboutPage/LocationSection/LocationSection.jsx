@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { MapPin, Phone } from "lucide-react";
 
 export function LocationSection() {
@@ -6,27 +5,19 @@ export function LocationSection() {
     <section className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-center">Location</h2>
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 border-2 border-gray-100 rounded-lg">
-          <div className="w-full h-[400px] bg-gray-200 overflow-hidden">
-            <Image
-              src=""
-              alt="Map location"
-              width={1200}
-              height={400}
-              className="w-full h-full object-cover"
+        {/* Remove `grid-cols-2` since there's only one column now */}
+        <div className="border-2 border-gray-100 rounded-lg overflow-hidden">
+          {/* Full-width map container */}
+          <div className="w-full h-[400px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d255345.4811810396!2d32.56811372176781!3d0.27265887745120637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smt%20lebanon%20church!5e0!3m2!1sen!2sug!4v1744699525678!5m2!1sen!2sug"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-start max-w-md">
-            <h3 className="text-xl font-bold mb-4">Christ Ministries Church</h3>
-            <p className="flex items-center text-gray-600 mb-2">
-              <MapPin className="h-5 w-5 mr-2" />
-              123 Faith Street
-            </p>
-            <p className="text-gray-600 mb-4 ml-7">Cityville, ST 12345</p>
-            <p className="flex items-center text-gray-600">
-              <Phone className="h-5 w-5 mr-2" />
-              (123) 456-7890
-            </p>
           </div>
         </div>
       </div>
