@@ -1,23 +1,27 @@
 import { Users, Heart, Link2 } from "lucide-react";
+import { FaChildren } from "react-icons/fa6";
+import { GrRestroomWomen } from "react-icons/gr";
+import { TbBuildingCommunity } from "react-icons/tb";
+import { GiTeamDowngrade } from "react-icons/gi";
 
 const ministryData = [
   {
-    icon: Users,
+    icon: FaChildren,
     title: "Children's Ministry",
     description: "Nurturing young hearts in faith through fun and learning",
   },
   {
-    icon: Users,
+    icon: GiTeamDowngrade,
     title: "Youth Ministry",
     description: "Empowering teens to grow in their faith journey",
   },
   {
-    icon: Heart,
+    icon: GrRestroomWomen,
     title: "Women's Ministry",
     description: "Supporting and encouraging women in their walk with Christ",
   },
   {
-    icon: Link2,
+    icon: TbBuildingCommunity,
     title: "Community Outreach",
     description: "Serving our community with love and compassion",
   },
