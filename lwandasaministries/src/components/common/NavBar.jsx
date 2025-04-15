@@ -53,12 +53,7 @@ export default function Navbar() {
             >
               Events
             </Link>
-            <Link
-              href="/sermons"
-              className="text-gray-900 hover:text-purple-700 font-medium"
-            >
-              Sermons
-            </Link>
+
             <Link
               href="/contact"
               className="text-gray-900 hover:text-purple-700 font-medium"
@@ -148,13 +143,7 @@ export default function Navbar() {
               >
                 Events
               </Link>
-              <Link
-                href="/sermons"
-                className="text-gray-900 hover:text-purple-700 font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Sermons
-              </Link>
+
               <Link
                 href="/contact"
                 className="text-gray-900 hover:text-purple-700 font-medium py-2"
